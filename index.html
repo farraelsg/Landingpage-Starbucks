@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <title>Starbucks Landingpage</title>
+</head>
+
+<body>
+    <div id="elipse"></div>
+    <section>
+        <header>
+            <a href="#"><img src="./img/logo.png" alt="Logo Starbucks"></a>
+            <div class="menu-sanduiche" onclick="ativarMenu()">
+            </div>
+            <ul class="navegacao">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="conteudo">
+            <div class="texto">
+                <h1>It's not just Coffee<br>
+                    It's <span id="cu">Starbucks</span>
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="bebidas-destaque">
+                <img src="./img/img1.png" alt="Bebida 1" id="destaque-bebida">
+            </div>
+        </div>
+        <footer>
+            <div class="bebidas-pequenas">
+                <a href="#" onclick="mudarImagemEFundo('./img/img1.png');mudarCorCirculo('#017143')"><img
+                        src="./img/thumb1.png" alt="Bebida 1"></a>
+                <a href="#" onclick="mudarImagemEFundo('./img/img2.png');mudarCorCirculo('#eb7495')"><img
+                        src="./img/thumb2.png" alt="Bebida 2"></a>
+                <a href="#" onclick="mudarImagemEFundo('./img/img3.png');mudarCorCirculo('#d752b1')"><img
+                        src="./img/thumb3.png" alt="Bebida 3"></a>
+            </div>
+        </footer>
+    </section>
+    <div class="redes-sociais">
+        <a href="#"><img src="./img/facebook.png" id="fb" alt="Facebook"></a>
+        <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
+    </div>
+    <script src="./js/mudarImagem.js"></script>
+    <script src="js/mudarCor.js"></script>
+    <script src="./js/menuSanduiche.js"></script>
+</body>
+
+</html>
